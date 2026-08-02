@@ -1,0 +1,6 @@
+{
+  "name": "PlantScan AI",
+  "description": "Mobile application prototype for plant identification and botanical guide with Material Design 3.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
