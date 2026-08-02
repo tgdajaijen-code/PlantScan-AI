@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle Card -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Outer Scanner Crosshairs -->
+  <path d="M 112,176 V 128 H 160" fill="none" stroke="#6ee7b7" stroke-width="12" stroke-linecap="round" />
+  <path d="M 400,176 V 128 H 352" fill="none" stroke="#6ee7b7" stroke-width="12" stroke-linecap="round" />
+  <path d="M 112,336 V 384 H 160" fill="none" stroke="#6ee7b7" stroke-width="12" stroke-linecap="round" />
+  <path d="M 400,336 V 384 H 352" fill="none" stroke="#6ee7b7" stroke-width="12" stroke-linecap="round" />
+
+  <!-- Botanical Leaf Icon -->
+  <g filter="url(#glow)">
+    <path d="M 256,120 C 340,120 380,210 350,300 C 320,380 256,390 256,390 C 256,390 192,380 162,300 C 132,210 172,120 256,120 Z" fill="url(#leafGrad)" />
+    <!-- Leaf Stem & Vein -->
+    <path d="M 256,380 V 160" stroke="#047857" stroke-width="8" stroke-linecap="round" />
+    <path d="M 256,220 L 296,190" stroke="#047857" stroke-width="6" stroke-linecap="round" />
+    <path d="M 256,260 L 216,230" stroke="#047857" stroke-width="6" stroke-linecap="round" />
+    <path d="M 256,300 L 290,275" stroke="#047857" stroke-width="6" stroke-linecap="round" />
+  </g>
+</svg>
